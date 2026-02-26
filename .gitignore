@@ -1,0 +1,34 @@
+# Claude Code lokale Einstellungen
+.claude/
+
+# VPE Lizenz (geheim - niemals einchecken!)
+vpe_license.h
+
+# VPE Bibliotheken (kommerziell, nicht weitergeben)
+*.lib
+*.dll
+vpiface.h
+vpifaceu.h
+vppiface.h
+vppifaceu.h
+Vpecomon.h
+vpep32.def
+vpep32bc.def
+
+# Build-Output
+Release/
+Debug/
+x64/
+*.obj
+*.pdb
+*.iobj
+*.ipdb
+*.exe
+*.res
+*.aps
+*.log
+
+# Visual Studio
+.vs/
+*.user
+*.suo

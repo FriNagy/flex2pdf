@@ -1,0 +1,206 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+APP_ICON                ICON                    "app_icon.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MENU_1 MENUEX
+BEGIN
+    POPUP "&File",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "Speichern",                   CM_SAVEPDF,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Drucken",                     CM_RPRINT,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        POPUP "Test / Info ...",                65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "Readme.f2p",                  ID_DRUCKERINFO_DEMOSEITE2,MFT_STRING,MFS_ENABLED
+            MENUITEM "Cmdline.f2p",                 ID_DRUCKERINFO_DEMOSEITE1,MFT_STRING,MFS_ENABLED
+            MENUITEM "Drucker Info",                ID_DRUCKERINFO_DRUCKERINFO,MFT_STRING,MFS_ENABLED
+            MENUITEM "Test-Seite",                  ID_DRUCKERINFO_TEST,MFT_STRING,MFS_ENABLED
+            MENUITEM "Test-Seite2",                 ID_DRUCKERINFO_DEMOSEITE3,MFT_STRING,MFS_ENABLED
+            MENUITEM "Line Demo",                   ID_TEST_LINEDEMO,MFT_STRING,MFS_ENABLED
+        END
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "E&xit \t <Esc>",              CM_EXIT,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Edit",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Edit Text",                  CM_EDITMF,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Single Edit",                CM_EDITSET,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Edit &Mail Setting",          CM_EDITMAILSET,MFT_STRING,MFS_ENABLED
+        MENUITEM "Edit DF Formular",            ID_EDIT_EDITDFFORMULAR,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Create f2p.log",              ID_SAVES_,MFT_STRING,MFS_CHECKED
+    END
+    MENUITEM "&Refresh",                    CM_VORSCHAU,MFT_STRING,MFS_ENABLED
+    MENUITEM "show &PDF",                   CM_SAVEPDFS,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    POPUP "&Save and Exit...",              65535,MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "nur als TMP",                 ID_SAVE_,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "Eigene Dateien",              ID_SAVE_EIGENEDATEIEN,MFT_STRING,MFS_ENABLED
+        MENUITEM "on Desktop",                  ID_SAVE_ONDESKTOP,MFT_STRING,MFS_ENABLED
+        MENUITEM "on Desktop / F2P",            ID_SAVE_ONDESKTOPF2P,MFT_STRING,MFS_ENABLED
+    END
+END
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Context Menu"
+    BEGIN
+        POPUP "Ansicht"
+        BEGIN
+            MENUITEM "ganze Seite",                 ID_ANSICHT_GANZESEITE
+            MENUITEM "volle Breite",                ID_ANSICHT_VOLLEBREITE
+            MENUITEM SEPARATOR
+            MENUITEM "verkleinern",                 ID_ANSICHT_VERKLEINERN
+            MENUITEM "100%",                        ID_ANSICHT_100
+            MENUITEM "vergrössern",                 ID_ANSICHT_VERGR
+            MENUITEM SEPARATOR
+            MENUITEM "Grid Ein/Aus\tG",             ID_ANSICHT_GRIDEIN, CHECKED
+        END
+        MENUITEM "Refresh",                     CM_VORSCHAU
+        POPUP "Gehe zu"
+        BEGIN
+            MENUITEM "Erste Seite\tCtrl-Pos1",      ID_GEHEZU_ERSTESEITE
+            MENUITEM "Seite Vor",                   ID_GEHEZU_SEITEVOR
+            MENUITEM "Seite Nach",                  ID_GEHEZU_SEITNACH
+            MENUITEM "Letzte Seite\tCtrl-Ende",     ID_GEHEZU_LETZTESEITE
+        END
+        MENUITEM "Show PDF",                    CM_SAVEPDFS
+        POPUP "Speichern"
+        BEGIN
+            MENUITEM "Unter...",                    CM_SAVEPDF
+            MENUITEM SEPARATOR
+            MENUITEM "als TMP",                     ID_SAVE
+            MENUITEM SEPARATOR
+            MENUITEM "Eigene Dateien",              ID_SAVE_EIGENEDATEIEN
+            MENUITEM "on Desktop",                  ID_SAVE_ONDESKTOP
+            MENUITEM "on Desktop / F2P",            ID_SAVE_ONDESKTOPF2P
+        END
+        MENUITEM "Drucken  \tF12",              CM_RPRINT
+        MENUITEM "Text-Bearbeiten\tF2",         CM_EDITMF
+        MENUITEM SEPARATOR
+        MENUITEM "Exit\tEsc",                   CM_EXIT
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DDIALOG2 DIALOGEX 0, 0, 244, 112
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST | WS_EX_WINDOWEDGE
+CAPTION "Drucker - Dialog"
+FONT 11, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Button2",IDC_BUTTON2,35,35,200,15,BS_LEFT | BS_FLAT
+    PUSHBUTTON      " ",IDC_BUTTON1,35,12,172,15,BS_LEFT | BS_VCENTER | BS_FLAT
+    DEFPUSHBUTTON   "&Drucken",IDOKDRUCK,11,66,69,14,0,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Öffnen",IDOKOPEN,89,66,69,14
+    PUSHBUTTON      "&Mail + Clipboard",IDOKMAIL,166,66,69,14
+    PUSHBUTTON      "Info",IDOK,11,89,69,14
+    PUSHBUTTON      "&Copy to Clipboard",IDCOP2CLIP,89,89,69,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,166,89,69,14
+    GROUPBOX        "",IDC_STATIC,6,1,235,56,BS_FLAT
+    LTEXT           "Datei:",IDC_STATIC,11,16,20,8
+    LTEXT           "in:",IDC_STATIC,23,38,8,8
+    LTEXT           ".PDF  ",IDC_STATIC5,214,16,21,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DDIALOG2, DIALOG
+    BEGIN
+        RIGHTMARGIN, 241
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

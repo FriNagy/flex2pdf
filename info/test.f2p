@@ -1,0 +1,58 @@
+[=) dos+ a41 arial
+
+['Arial' 12 BOLD COLOR RED BKGCOLOR GRAY]Commands Flex2PDF [ BO C BLACK BC WHITE]
+
+Alle Kommandos fangen mit [[x an danach vier Positions Parameter und danach erst das COMMAND
+line,box,circle,text,tbox,rtf,rbox,ft,fb,bc, sonst grafik.
+
+
+ [ C ORANGE PC ORANGE PS 0.04]Linie mit [[x11,3,14,3,line [x11,3,14,3,li
+ oder [ C Purple PC Purple]Line mit [[x6,4,14,3,line [x6,4,14,3,li
+ [ C RED PC RED]Kreis  mit [[x11,3,14,5,circle [x11,3,14,5,ci
+ [ C OLIVE PC OLIVE]Box mit [[x15,3,18,5,box [x15,3,18,5,bo
+
+[ C BLACK  PC RED PS 0.03 T]zu Positionieren kînnen wir statt cm eingaben auch einige Variablen auswÑhlen
+z.B. L,R,T,B (RÑnder:Left,Right,Top,Bottom) X,Y,W,H (max. Druckbare Bereich) ODER  x,y,t,b
+
+[ C gray PC gray PS 0.4 ] mit [[x0,0,w,h,box ganzes Blatt [x0,0,w,h,box
+[ C GREEN PC GREEN PS 0.02 ] mit [[xl,t,r,b,box druckbare Bereich [xl,t,r,b,box
+[ C RED  PC RED ] mit [[xL,T,R,B,box Seiten Setting [xL,T,R,B,box
+[ C BLACK  PC BLACK PS 0.04] 20 CM Line [x12,1,13,1,li [x12.5,1,12.5,21,li [x12,21,13,21,li
+Texte:
+
+mit [[x11,a,=,=,text,Hello Leute  [x11,a,=,=,text,Hello Leute
+'=' steht fÅr Angaben die das System selber ermitteln soll
+klein a ist die y Pos. von der Aktuellen Zeile
+
+mit [[x11,a,=,=,tbox,Hello Leute  [x11,a,=,=,tbox,Hello Leute
+
+mit [[x11,a,R,=,rtf,Hello, {\b this is bold } and back[x11,a,R,=,rtf,Hello, {\b this is bold } and back
+mit RTF formatierung sollte man sich auskennen
+
+mit [[x11,a,R,=,rbox,Hello, {\b this is bold } and back[x11,a,R,=,rbox,Hello, {\b this is bold } and back
+
+wir kînnen auch RTF formatierte Dateien ausgeben..
+
+mit [[x11,y,R,=,ft,tfile.rtf[x11,y,R,=,ft,tfile.rtf
+
+oder mit [[x11,y,R,=,fb,tfile.rtf[x11,y,R,=,fb,tfile.rtf
+
+[ C BLACK  PC BLACK ]
+mit [[x11.25,a-0.2,R-2,a+1,Bc2,87248104[x11.25,a-0.2,R-2,a+1,Bc2,87248104
+Barcodeformat wird durch die Zahl hinten BC festgelegt,
+Achte auf die Positionierung:
+ab Horizontal 11.25 cm und Vertikal letzte obere y - 1 cm
+bis Rechte Rand - 2 cm und letzte untere Vertikale Position
+[ PS 0]
+mit [[x12.5,a-0.6,R,a+0.6,BC26,nagy frigyes [x12.5,a-0.6,R,a+0.6,BC26,nagy frigyes
+
+und sonst Grafik ausgabe, div. Typen werden unterstÅtzt BMP PNG JPG SGI
+[[x]14,y-1,=,=,bmp,informa.bmp [x14,y-1,=,=,bmp,informa.bmp
+
+das gleiche mit Rahmen zuerst Pen einschalten mit [[PS 0.05 PC RED][PS 0.05 PC RED]
+[[x]14,y-1,=,=,bmp,informa.bmp [x14,y-1,=,=,bmp,informa.bmp
+
+[ PS 0]
+mit [[x12.5,a-0.6,R,a+0.6,BC5,-001234[x12.5,a-0.6,R,a+0.6,BC5,-001234
+
+

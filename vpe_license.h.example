@@ -1,0 +1,6 @@
+// vpe_license.h.example
+// Kopiere diese Datei nach vpe_license.h und trage deinen VPE-Lizenzkey ein.
+// Diese Datei wird in git eingecheckt - vpe_license.h NICHT!
+#pragma once
+#define VPE_LICENSE_KEY  "VPE-XXXXX-XXXX"
+#define VPE_LICENSE_KEY2 "XXXX-XXXX"

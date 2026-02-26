@@ -1,0 +1,35 @@
+
+#include "f2p.rh"
+#include <windows.h>
+
+APP_ICON ICON f2p.ico
+
+
+
+
+MENU_1 MENU 
+{
+ POPUP "&File"
+ {
+  MENUITEM "E&xit", CM_EXIT
+ }
+
+ POPUP "&Demos"
+ {
+  MENUITEM "&Rich Text Format (RTF)", CM_RTF
+
+  MENUITEM "&Rich Text Block", CM_TEXT_BLOCK_RTF
+
+  MENUITEM "&Clickable Objects + Charts", CM_CLICKABLE
+
+  MENUITEM "&2D-Barcodes", CM_BAR2D
+
+  MENUITEM "&User Defined Objects (UDO)", CM_UDO
+
+  MENUITEM "&Scale-to-Gray Technology", CM_SCALE2GRAY
+
+  MENUITEM "&Picture Export", CM_PICEXPO
+ }
+
+}
+

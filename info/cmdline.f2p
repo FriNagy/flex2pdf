@@ -1,0 +1,56 @@
+[=) dos+ a41 arial
+
+['Arial' S 12 BOLD COLOR RED BKGCOLOR GRAY][x2,1,=,=,tbox, Command Line Parameter F2P  [ BO C BLACK BC WHITE S 10]
+
+[ I]Syntax: 'f2p Filename [[Parameter]'      Parameter: -op -p:... -f:... -s:...  usw.  [ IO]
+
+f2p\f2p.exe mytest.f2p -yR -odv -h -p:myprint.prs,5
+      
+['Consolas' S 8]
+	   -op ohne Vorschau    Drucken und beenden (ohne Druckdialog)
+	   -od ohne Vorschau    Drucken und beenden (mit  Druckdialog)
+	   -or ohne Vorschau    PDF Erstellen und beenden
+	   -om ohne Vorschau    Mail Send starten und beenden
+	   -oo ohne Vorschau    Datei erstellen (Aktion in f2p Datei)
+	       (doch einblenden mit -o1v (mit ein sec. sleep))
+    -oe und -ox Konvertieren *.F2P Datei nach *.VPE bzw *.PDF  (danach F2P lîschen)                       
+	       ( mit v  (zB. -odv ) wird Vorschau zwar eingeblendet aber nicht aktiviert)
+	                            (mit shift-click auf Abbrechen (im Druckerauswahl-Dialog) wird es aber aktiviert)
+	                          
+	   -p: Printer Steuerungs Datei (sonst Standarddrucker)
+	       die .prs Dateiname wo alle Druckereinstellungen gespeichert sind
+	       zB: -p:myprint.prs  oder mit Abfrage  -p:myprint.prs,2  (,2 ,6 immer ,1 ,5 bei Fehler ,4 nie)
+	       existiert die Datei nicht oder Fehlerhaft wird nachgefragt      
+	       mit "=" kînnen wir direkt einen Printer ansteuern ( -p:="Epson LQ800" )       
+	       
+	   -h  ist -h definiert wird die PRS Datei aus HOME (Environment-Variable) geholt
+	   
+	   -f: PDF Dateiname  (enthÑlt keine Pfad Angabe wird in TMP angelegt)
+	                      (ohne PDF Datei wird Filename als Ziel verwendet)
+
+	   -i: Infos (includiert in Mail bzw. PDF Dokument)
+
+	   -x  starte Acrobat wenn PDF   (Voreinstellung nicht starten)
+
+	   -w  Window Anzeige Modus (-w5 maximized -w9 Minimized -w2 Standard) 
+
+	   -y  Horizontale Pos von F2P Vorschau  ( -yl )
+           l r links rechts
+           L R linke Schirm rechte Schirm
+           
+	   -c  Alle Parameter und setting aus Clipboard
+	
+	   -s: Verzeichniss Steuerungs Datei 
+        alle Steuerung, include und Bitmap Dateien, werden da gesucht
+	       Voreinstellung current exe dir, wo f2p.exe liegt
+
+       -z:   myzoomode 10...1000           ( Voreinstellung 100%);
+       -m:   mymenmode = -m0 kein menÅ     ( Voreinstellung mit menÅ); 
+       -t:   toolboxmode -t0 oder 1        ( Voreinstellung Std. Toolbox)
+                         bzw. integer      ( zB: VPE_NO_RULERS=16384 )
+                         
+	   -v  starte in Paper-View mode (Voreinstellung weisse Hintergrund)
+
+	   -n  kein Auto-Save von Dokumenten ( Testmodus)
+	      
+    -k  Steuerung Kopfinfo wenn f2p Datei nicht mit [=) startet

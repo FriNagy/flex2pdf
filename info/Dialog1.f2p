@@ -1,0 +1,8 @@
+[=) dos+ a41 arial
+
+[ PS 0.02 PC DKBLUE 'Arial' GRDL GRDSC LTGRAY GRDMC WHITE GRDEC DKGRAY CE ][xL,T,R-2,=,rb,\fs8 \par \fs26 STARTDIALOG F2P \par \fs8 \par
+
+[xL,T+1.8,=,=,bmp,info\dialog1.jpg
+
+[ BC LTGRAY TO]
+[xL,T+10,R-2,B,FT,info\dialog1.RTF

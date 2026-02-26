@@ -1,0 +1,73 @@
+[=) dos++ a42a arial lng:GER mnr:/F ; FN  tnt.v9
+
+[==,P,[0[=L,1,xy[FAngebot Nr.  20-1390901[l[^PS 0.015][xL,a+0.15,R,a+0.15,line[0
+
+[^C DKGRAY 'Arial' B S 13]
+Test's zu farblich hinterlegte Texte ( Font:  [[ 'Arial' B S 13] )
+[^PS 0.015][xL,a+0.4,R,a+0.4,line
+
+[ 'Consolas' S 9 BO C BLACK]mit [[ PS 0 BC DKGRAY C WHITE CE][[xL,a,R,=,text,FELDER SIERRA Holzbearbeitung K 700[ 'Arial' B S 13]
+[l-
+[ PS 0 BC DKGRAY C WHITE CE ][xL,a,R,=,text,FELDER SIERRA Holzbearbeitung K 700
+
+
+[ 'Consolas' S 9 C BLACK BC WHITE BO]mit Rahmen [[ PS 0.04 BC DKGRAY C WHITE CE][[xL,a,R,=,[Ftbox[f,FELDER SIERRA Holzbearbeitung K 700[ 'Arial' B S 13]
+[l-
+[ PS 0.04  BC DKGRAY C WHITE CE][xL,a,R,=,tbox,FELDER SIERRA Holzbearbeitung K 700
+
+
+[ 'Consolas' S 9 C BLACK BC WHITE BO]mit Rahmen B/W [[ PS 0.04 BC WHITE C BLACK CE][[xL,a,R,=,[Ftbox[f,FELDER SIERRA Holzbearbeitung K 700[ 'Arial' B S 13]
+[l-
+[ PS 0.04   BC WHITE C BLACK  CE][xL,a,R,=,tbox,FELDER SIERRA Holzbearbeitung K 700
+
+
+[ 'Consolas' S 9 C BLACK BC WHITE BO]mit grauen Rahmen [[ PS 0.02 PC DKGRAY BC DKGRAY C WHITE CE][[xL,a,R,=,[Ftbox[f,FELDER ...[ 'Arial' B S 13]
+[l-
+[ PS 0.04 PC DKGRAY BC DKGRAY C WHITE CE][xL,a,R,=,tbox,FELDER SIERRA Holzbearbeitung K 700
+
+
+[ 'Consolas' S 9 C BLACK BC WHITE BO]oder mit Farbverlauf und Rahmen [[ PS 0.04 PC DKBLUE GRDL GRDSC LTBLUE GRDEC DKBLUE ]][[xL,a,R,=,[Ftbox[f,FELDER ...[ 'Arial' B S 13]
+[l-
+[ PS 0.04 PC DKBLUE GRDL GRDSC LTBLUE GRDEC DKBLUE C WHITE CE][xL,a,R,=,tbox,FELDER SIERRA Holzbearbeitung K 700
+
+[ 'Consolas' S 9 C BLACK BC WHITE BO TO HSN ]oder mit Hor.Farbverlauf und Rahmen [[ PS 0.04 PC DKBLUE GRDL GRDSC LTRED GRDEC DKBLUE ]][[xL,a,R,=,[Ftbox[f,FELDER ...[ 'Arial' S 9]
+zu umschalten zwischen horizontal o. vertikal verlauf (gradient) geht nur mit [[=h,v bzw. [[=v,v    (bei 3 Color auch mit zB. [[=v25,v ) [ 'Arial' B S 13]
+[=h30,v
+[l-
+[ PS 0.04 PC DKBLUE GRDL GRDSC LTRED GRDEC DKBLUE C WHITE CE][xL,a,R,=,tbox,FELDER SIERRA Holzbearbeitung K 700
+
+
+[ 'Consolas' S 9 C BLACK BC WHITE BO TO HSN ]oder mit  3 Farben [[ PS 0.04 GRDL GRDTRI red GRDSC DKBLUE GRDMC WHITE GRDEC DKBLUE ]][[xL,a,R,=,[Ftbox[f,FELDER ...[ 'Arial' B S 13]
+[l-
+[ PS 0.04 GRDL GRDTRI red GRDSC DKBLUE GRDMC WHITE GRDEC DKBLUE ][xL,a,R,=,tbox,FELDER SIERRA Holzbearbeitung K 700
+
+
+[ 'Consolas' S 9 C BLACK BC WHITE BO TO HSN ]oder doch vertikal mit roll-Effekt [[ GRDL GRDSC LTGRAY GRDMC WHITE GRDEC DKGRAY ]][[xL,a,R,=,[Ftbox[f,FELDER ...[ 'Arial' B S 13]
+[=V33,v
+[l-
+[ PS 0.0 GRDL GRDTRI red GRDSC LTGRAY GRDMC WHITE GRDEC DKGRAY ][xL,a,R,=,text,FELDER SIERRA Holzbearbeitung K 700
+
+[ 'Consolas' S 9 C BLACK BC WHITE BO TO HSN ]leider gibt keinen Befehl zu vertikal zentrieren
+ [[ GRDL GRDSC LTGRAY GRDMC WHITE GRDEC DKGRAY ]][[xL,a+1,R,1,[Ftbox[f,FELDER ...[ 'Arial' B S 13]
+[l-
+[ PS 0.0 GRDL GRDTRI red GRDSC LTGRAY GRDMC WHITE GRDEC DKGRAY ][xL,a,R,a+1,text,FELDER SIERRA Holzbearbeitung K 700
+
+
+[ 'Consolas' S 9 C BLACK BC WHITE BO TO HSN ]da mÅssen wir RTF Text generieren ( mit Leerzeilen am Anfang und End )
+"\fs8 \par \fs26 FELDER SIERRA Holzbearbeitung K 700\par \fs8 \par"  ( RTF Fontsize ist im 0.5 points)
+
+[ PS 0.0 'Arial' B S 13 GRDL GRDTRI red GRDSC LTGRAY GRDMC WHITE GRDEC DKGRAY ][xL,a,R,=,rtf,\fs8 \par \fs26 FELDER SIERRA Holzbearbeitung K 700\par \fs8 \par
+
+
+[ 'Consolas' S 9 C BLACK BC WHITE BO TO HSN ]und wieder Horizontal mit [[=h33,v
+[=h33,v
+[ PS 0.0 'Arial' B S 13 GRDL GRDTRI red GRDSC LTGRAY GRDMC WHITE GRDEC DKGRAY ][xL,a,R,=,rtf,\fs8 \par \fs26 FELDER SIERRA Holzbearbeitung K 700\par \fs8 \par
+
+[ 'Consolas' S 9 C BLACK BC WHITE BO TO HSN ]und mit Rahmen [[xL,a,R,=,[Frbf[f,\fs8 \par ...
+[l-
+[ PS 0.02 PC GRAY 'Arial' B S 13 GRDL GRDTRI red GRDSC LTGRAY GRDMC WHITE GRDEC DKGRAY ][xL,a,R,=,rb,\fs8 \par \fs26 FELDER SIERRA Holzbearbeitung K 700\par \fs8 \par
+
+
+[ 'Consolas' S 9 C BLACK BC WHITE BO TO HSN ]eventuell schatten noch: [[ PS 0.02 PC GRAY GRDL[ B ]SH [ BO]GRDTRI GRAY GRDSC LTGRAY GRDMC WHITE GRDEC DKGRAY] [[xL,a,R,=,rbf,...
+[l-
+[ PS 0.02 PC GRAY 'Arial' B S 13 GRDL SH GRDTRI GRAY GRDSC LTGRAY GRDMC WHITE GRDEC DKGRAY ][xL,a,R,=,rb,\fs8 \par \fs26 FELDER SIERRA Holzbearbeitung K 700\par \fs8 \par
